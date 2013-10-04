@@ -16,9 +16,11 @@ then
   echo "You are not allowed to execute this script." && exit 1
 fi
 
-# Install dependencies and dev packages for Ubuntu or *.deb based linux distributions
+# Install dependencies and dev packages for Ubuntu or *.deb based Linux distributions
 apt-get install libapr1-dev libconfuse-dev libexpat1-dev pkg-config python-dev libpcre3-dev rrdtool build-essential librrd-dev
 
+# Install dependencies and dev packages for Redhat or *.rpm based Linux distributions
+#yum install libconfuse-devel.x86_64 pcre pcre-devel apr-devel apr libconfuse expat expat-devel pkgconfig python-devel rrdtool rrdtool-devel
 # For gmond and gmetad
 ./configure --prefix=/usr/local/ganglia --with-gmetad
 
