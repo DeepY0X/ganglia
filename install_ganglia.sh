@@ -20,7 +20,7 @@ fi
 apt-get install libapr1-dev libconfuse-dev libexpat1-dev pkg-config python-dev libpcre3-dev rrdtool build-essential librrd-dev
 
 # Install dependencies and dev packages for Redhat or *.rpm based Linux distributions
-#yum install libconfuse-devel.x86_64 pcre pcre-devel apr-devel apr libconfuse expat expat-devel pkgconfig python-devel rrdtool rrdtool-devel
+#yum install zlib zlib-devel libconfuse-devel.x86_64 pcre pcre-devel apr-devel apr libconfuse expat expat-devel pkgconfig python-devel rrdtool rrdtool-devel
 # For gmond and gmetad
 ./configure --prefix=/usr/local/ganglia --with-gmetad
 
